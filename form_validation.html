@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+  Name:<input type="text" name="" onblur="form_validate(this,'nmErr')" id="i"><span id="nmErr"></span>  <br> <br>
+  Mobile:<input type="text" name="" onblur="form_validate(this,'mobErr')"><span id="mobErr"></span>
+
+
+ <script>
+ 	
+  function form_validate(e,spid)
+
+  {
+  	console.log(e.value);
+
+  	// reg_ex = /^[a-zA-Z]+$/
+
+   if(e.value=="")
+   {
+
+   	spanId = document.getElementById(spid);
+   	spanId.innerHTML ="* Requied. . .!";
+   	spanId.style.color ="red";
+   }
+
+
+   else
+   {
+   	spanId = document.getElementById(spid);
+   	document.getElementById(spid) .innerHTML="OK";
+   	spanId.style.color ="green"
+   }
+
+  }
+
+
+ </script>
+
+ 
+
+
+</body>
+</html>
+
+
+
+

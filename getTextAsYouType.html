@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+  
+  <input type="text" name="" id="text123" onkeyup="hello()">
+
+  <textarea id="getText"></textarea>
+
+  <form onsubmit="return validate()">
+
+  	<table>
+  		<tr>
+  			<td>name: </td>
+  			<td><input type="text" name="" id="nm"></td>
+  		</tr>
+
+        <tr>
+        	<td>mobile num: </td>
+        	<td><input type="num" name="" id="nm1"></td>
+        </tr>
+
+        <tr>
+          <td>password</td>
+          <td><input type="text" name="" id="nm2"></td>
+        </tr>
+        <tr>
+          <td>conform password</td>
+          <td><input type="text" name="" id="nm3"></td>
+        </tr>
+
+
+       <tr>
+
+       	 <td><input type="submit" name=""></td>
+       </tr>
+  
+  	</table>
+  	
+  </form>
+
+
+  <script type="text/javascript">
+  	  
+  	  function hello()
+  	  {
+  	  	var text = document.getElementById("text123").value;
+
+  	  	document.getElementById("getText").innerHTML = text
+
+  	  }
+
+  	  function validate()
+  	  {
+  	  	var name = document.getElementById("nm").value;
+
+         var ex_name= /^[a-zA-Z]+$/;
+
+        var mobilenum = document.getElementById("nm1").value;
+         var ex_mobile= /^[0-9]+$/;
+
+         var password = document.getElementById("nm2").value;
+         var conform_password = document.getElementById("nm3").value;
+
+        if(name=="")
+        {
+        	alert("name Required. . .!");
+        	return false;
+        }
+
+        if(!(ex_name.test(name)))
+        {
+        	alert("letters Required. . .!");
+        	return false;
+        }
+
+         if(mobilenum=="")
+        {
+          alert("numbers Required. . .!")
+          return false;
+        }
+        if(!(ex_mobile.test(mobilenum)))
+        {
+          alert("DIGIT ONLY. . .!");
+          return false;
+        }
+        if(password=="")
+        {
+          alert("password Required. . .!")
+          return false;
+        }
+      
+
+       if(conform_password=="")
+       {
+        alert("conform_password return. . .!")
+        return false;
+       }
+       if(conform_password=="")
+       {
+        alert("password to match")
+        return false;
+       }
+       if(!(password==conform_password))
+       {
+        alert("password does not match")
+        return false;
+       }
+        
+       
+  	  }
+   
+      
+
+  </script>
+
+</body>
+</html>

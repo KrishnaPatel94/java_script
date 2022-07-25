@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+      
+	.header{
+		background-color: lightcoral;
+	}	
+	</style>
+</head>
+<body>
+
+	<i id="text"></i>
+
+    <h1 id="menu">nothing</h1>
+    <button onclick="change();">change me</button>
+    <button onclick="change1();">note</button>
+
+
+    <h2 id="k1">tom</h2>
+    <button onclick="p1();">save</button>
+
+
+
+
+	<script type="text/javascript">
+		document.getElementById("text").innerHTML= "krishna";
+		console.log("patel")
+		// document.write("coffee")
+
+		 
+			function change() {
+				let k = document.getElementById("menu");
+				k.classList.add("header");
+
+		}
+
+			function change1() {
+				let k = document.getElementById("menu");
+				k.classList.remove("header");
+
+		}
+
+
+       function p1(){
+
+       	  var p = document.getElementById("k1")
+       	  p.innerHTML ="jerry";
+       }
+      
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

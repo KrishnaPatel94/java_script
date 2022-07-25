@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<img src="https://i.pinimg.com/originals/0a/e4/8f/0ae48ff580901f57141d69327f04d01f.jpg" width="500px" height="300px" id="i11">
+	<button onclick="next()">click me</button>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		function next() {
+
+			let m =document.getElementById("i11")
+			if(m.src.match("https://i.pinimg.com/originals/0a/e4/8f/0ae48ff580901f57141d69327f04d01f.jpg"))
+			{
+
+			m.src="https://i.pinimg.com/736x/02/53/f5/0253f5aa5594315f87f16a74ce84ba64.jpg"
+			}
+			else if (m.src.match("https://i.pinimg.com/736x/02/53/f5/0253f5aa5594315f87f16a74ce84ba64.jpg")){
+				m.src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-12/11/full/1607655600-5776.jpg"
+			}
+			else{
+				m.src="https://i.pinimg.com/originals/0a/e4/8f/0ae48ff580901f57141d69327f04d01f.jpg"
+			}
+		}
+
+	</script>
+
+</body>
+</html>

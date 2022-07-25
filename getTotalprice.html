@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="">
+		
+	</style>
+</head>
+<body>
+
+	<input type="text" name="" value="1200" id="price">
+	<select id="quantity">
+		<option>---Select Quantity---</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+    <option>4</option>		
+		
+	</select>
+ <button onclick="GetTotalPrice()">xyz</button> 
+ <p id="TotalPrice"></p>
+
+<script type="text/javascript">
+
+
+
+  function GetTotalPrice()
+  {
+  	
+
+     var priceValue= document.getElementById("price").value;
+     var Qunatity= document.getElementById('quantity').value;
+
+   		mul = priceValue*Qunatity;
+
+     document.getElementById('TotalPrice').innerHTML = mul;
+
+     }
+    </script>
+
+ 
+	
+</body>
+</html>
